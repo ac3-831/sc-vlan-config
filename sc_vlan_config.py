@@ -34,7 +34,7 @@ if len(a) == 4 and int(a[0]) == xxx and int(a[1]) == xxx and int(a[2]) == x and 
 
 
 else:
-        print "\This IP is not configured for SSH. Please retry\n"
+        print "\This IP is not configured to receive SSH connections. Please retry\n"
 
 a
                                       
