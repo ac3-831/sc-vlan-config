@@ -17,7 +17,7 @@ vlan = raw_input("Enter the vlan to be changed to:\n")
 
 a = ip_address.split('.')
 
-if len(a) == 4 and int(a[0]) == 144 and int(a[1]) == 174 and int(a[2]) == 3 and int(a[3]) <= 212:
+if len(a) == 4 and int(a[0]) == xxx and int(a[1]) == xxx and int(a[2]) == x and int(a[3]) <= xxx: # sub x for your IP
         ssh_client = paramiko.SSHClient()
         ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         ssh_client.connect(hostname=ip_address,username=username,password=password)
