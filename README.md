@@ -37,4 +37,4 @@ else:
         print "\This IP is not configured for SSH. Please retry\n"
 
 
-~                                         
+                                      
