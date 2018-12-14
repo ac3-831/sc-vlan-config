@@ -20,7 +20,7 @@ a = ip_address.split('.')
 if len(a) == 4 and int(a[0]) == xxx and int(a[1]) == xxx and int(a[2]) == x and int(a[3]) <= xxx: # sub x for your IP
         ssh_client = paramiko.SSHClient()
         ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh_client.connect(hostname=ip_address,username=username,password=password)
+        ssh_client.connect(hostname=ip_address,username=username,password=password,look_for_keys=False,allow_agent=False)
         print "Successful connection", ip_address
         remote_connection = ssh_client.invoke_shell()
         remote_connection.send("configure terminal\n")
