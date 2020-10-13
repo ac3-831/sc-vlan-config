@@ -8,11 +8,11 @@ import random
 import sys
 import getpass
 
-ip_address = raw_input("Enter IP Address:\n")
-username = raw_input("Enter username:\n")
+ip_address = input("Enter IP Address:\n")
+username = input("Enter username:\n")
 password = getpass.getpass("Enter Password:\n")
-interface = raw_input("Enter the interface you want configured:\n")
-vlan = raw_input("Enter the vlan to be changed to:\n")
+interface = input("Enter the interface you want configured:\n")
+vlan = input("Enter the vlan to be changed to:\n")
 
 
 a = ip_address.split('.')
