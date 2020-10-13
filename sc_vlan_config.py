@@ -29,7 +29,7 @@ if len(a) == 4 and int(a[0]) == xxx and int(a[1]) == xxx and int(a[2]) == x and 
         remote_connection.send("end\n")
         time.sleep(1)
         output = remote_connection.recv(65535)
-        print output
+        print(output)
         ssh_client.close
 
 
